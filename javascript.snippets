@@ -1,0 +1,47 @@
+snippet req
+$1 = require('$2')
+endsnippet
+
+
+
+snippet new-sfc
+var React = require('react');
+
+
+var $1 = function(props) {
+	return (
+		$0
+	)
+};
+
+
+module.exports = $1;
+endsnippet
+
+
+
+snippet sfc
+var $1 = function(props) {
+	return (
+		$0
+	)
+};
+endsnippet
+
+
+
+snippet rcomp
+var React = require('react');
+
+
+var $1 = React.createClass({
+	render: function() {
+		return (
+			$0
+		)
+	}
+});
+
+
+module.exports = $1;
+endsnippet
